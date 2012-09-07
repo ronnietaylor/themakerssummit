@@ -7,7 +7,6 @@ configure do
 end
 
 class App < Sinatra::Application
-	register Sinatra::Async
 
 	get '/' do
 		haml :index
