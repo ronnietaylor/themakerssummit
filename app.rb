@@ -13,8 +13,9 @@ class App < Sinatra::Application
 		haml :index
 	end
 
-	aget '/delay/:n' do |n|
-    EM.add_timer(n.to_i) { body { "delayed for #{n} seconds" } }
-  end
+  # This is a sample async route. You must enable async sinatra to use this.
+	# aget '/delay/:n' do |n|
+  #   EM.add_timer(n.to_i) { body { "delayed for #{n} seconds" } }
+  # end
 
 end
