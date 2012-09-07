@@ -1,0 +1,8 @@
+body {
+  background-color: #f2b92a; }
+
+#logo {
+  width: 470px;
+  height: 524px;
+  margin: 0 auto;
+  background: url("../img/MakersSummitSplash.png") 0 0 no-repeat; }
