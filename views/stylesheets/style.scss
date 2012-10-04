@@ -1,0 +1,19 @@
+@import "compass_twitter_bootstrap"; /* Use this to get all of Bootstrap's @mixins and $variables */
+@import "compass_twitter_bootstrap_responsive";
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #F2B92A;
+}
+
+#inner-wrapper {
+  width: 100%;
+}
+
+#logo {
+  margin: 0 auto;
+}
+
