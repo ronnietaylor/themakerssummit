@@ -6,7 +6,12 @@ html {
 }
 
 body {
-  background-color: #F2B92A;
+  background-color: #f8c23c;
+}
+
+.color-bar {
+  background-color: #7dccb9;
+  height: 9px;
 }
 
 #inner-wrapper {
@@ -17,3 +22,21 @@ body {
   margin: 0 auto;
 }
 
+#speakers {
+  background-color: #fff;
+}
+
+#schedule {
+  .time {
+    text-align: right;
+  }
+}
+
+#experts {
+  .e-list, .e-list li {
+    list-style: none;
+  }
+  .e-list li {
+    float: left;
+  }
+}
