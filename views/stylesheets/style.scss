@@ -1,12 +1,25 @@
-@import "compass_twitter_bootstrap"; /* Use this to get all of Bootstrap's @mixins and $variables */
+@import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
+
+@mixin brandon {
+  font-family: "brandon-grotesque";
+}
+
+@mixin droid {
+  font-family: "droid-serif";
+}
 
 html {
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-color: #f8c23c;
+  background: #f8c23c url('../images/bg.png') ;
+  @include brandon;
+}
+
+p {
+  font-size: 12px;
 }
 
 .color-bar {
@@ -18,18 +31,165 @@ body {
   width: 100%;
 }
 
-#logo {
-  margin: 0 auto;
+#header {
+  position: relative;
+  padding-bottom: 5em;
+  z-index: -1;
+
+  .span10 {
+    height: 36em;
+  }
+  #logo {
+  }
+  .deets {
+    width: 56.6%;
+    background-color: #F8C23C;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    padding: 8em 0 7.25em 6.2em;
+    margin-left: 22.5em;
+    z-index: -1;
+    h1 {
+      text-transform: uppercase;
+      color: #4a3e21;
+      margin-bottom: .3em;
+    }
+    h3 {
+      margin-bottom: 1em;
+    }
+    .desc {
+      @include droid;
+      color: #a87f19;
+      font-size: 1.4em;
+      margin-bottom: 1.3em;
+      line-height: 1.3em;
+    }
+    .reg {
+    }
+    .btn-brown {
+      background-color: #221d13;
+      color: #f8c23c;
+      padding: 1em 2em;
+      @include border-radius(3px);
+      text-transform: uppercase;
+      display: block;
+      float: left;
+      margin-right: 2em;
+    }
+    span.date {
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      position: relative;
+      top: .3em;
+    }
+  }
 }
 
+#speakers-schedule {}
+
 #speakers {
+  padding: 2em 2em 0 2.6em;
   background-color: #fff;
+  margin-top: -34px;
+  width: 375px;
+  h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h3 {
+    @include droid;
+    font-weight: 400;
+  }
+  h4 {
+    color: #7dccba;
+    text-transform: uppercase;
+    font-size: .9em;
+  }
+  .s-desc {
+    @include droid;
+    font-style: italic;
+    color: #a87f19;
+  }
+  .speaker-list {
+    list-style: none;
+    margin: 0 -2.8em;
+    li {
+      padding: 2em 0;
+      min-height: 168px;
+      .s-pic {
+        width: 163px;
+        height: 163px;
+        border: 1px solid #dadada;
+        float: left;
+        margin: .5em 1.5em 2em 2.9em;
+        overflow: visible;
+      }
+      .s-name,
+      .s-title,
+      .s-bio {
+      }
+      .s-title {
+      
+      }
+      .s-bio {
+        padding-right: 3em; 
+        @include droid;
+        font-style: italic;
+        color: #73624b;
+        font-size: .96em;
+      }
+    }
+  }
+  .s-stripe {
+    background-color: #ecf7f5;
+  }
 }
 
 #schedule {
-  .time {
-    text-align: right;
+  margin-left: 0;
+  h2 {
+    padding-left: 3em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    text-transform: uppercase;
   }
+  .table-bordered {
+    font-size: 17px;
+    border-top: 1px solid #F8C23C;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    td {
+      border-left: 1px solid #F8C23C;
+      border-top: 1px solid #F8C23C;
+      padding: 10px;
+
+    }
+    td.time {
+      border-left: none;
+      text-align: right;
+      padding-left: 9px;
+      color: #a87f19;
+      font-weight: 700;
+    }
+    td.event {
+      @include droid;
+      color: #fff;
+      small {
+        @include brandon;
+        color: #a87f19;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+#panelists {
+  background-color: #4a3e21;
+  color: #a87f19;
 }
 
 #experts {
@@ -39,4 +199,9 @@ body {
   .e-list li {
     float: left;
   }
+}
+
+#footer {
+  background-color: #fff;
+  height: 5em;
 }

@@ -12,7 +12,10 @@
       %script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
   %body
     .color-bar
-    .container
-      #inner-wrapper
-        = yield
+    #inner-wrapper
+      = yield
     %script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+    %script(type="text/javascript" src="//use.typekit.net/lmt6ced.js")
+    :javascript
+      try{Typekit.load();}catch(e){}
+
