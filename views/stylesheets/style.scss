@@ -35,21 +35,24 @@ p {
   position: relative;
   padding-bottom: 5em;
   z-index: -1;
-
+  .container {
+    .span10 {
+      /*background-color: #F8C23C;*/
+    }
+  }
   .span10 {
-    height: 36em;
+    height: 41em;
   }
   #logo {
   }
   .deets {
-    width: 56.6%;
+    width: 57.4%;
+    /*width: 53.75%;*/
     background-color: #F8C23C;
     position: absolute;
     top: -50px;
-    right: 0;
     padding: 8em 0 7.25em 6.2em;
-    margin-left: 22.5em;
-    z-index: -1;
+    margin-left: 21.4em;
     h1 {
       text-transform: uppercase;
       color: #4a3e21;
@@ -88,7 +91,9 @@ p {
   }
 }
 
-#speakers-schedule {}
+#speakers-schedule {
+  margin-top: -4.8em;
+}
 
 #speakers {
   padding: 2em 2em 0 2.6em;
@@ -107,6 +112,8 @@ p {
     color: #7dccba;
     text-transform: uppercase;
     font-size: .9em;
+    line-height: 14px;
+    margin-bottom: 10px;
   }
   .s-desc {
     @include droid;
@@ -115,31 +122,24 @@ p {
   }
   .speaker-list {
     list-style: none;
-    margin: 0 -2.8em;
+    margin: 0 -2em 0 -2.6em;
     li {
-      padding: 2em 0;
+      padding: 1.2em 0;
       min-height: 168px;
       .s-pic {
         width: 163px;
         height: 163px;
-        border: 1px solid #dadada;
         float: left;
         margin: .5em 1.5em 2em 2.9em;
         overflow: visible;
       }
-      .s-name,
-      .s-title,
       .s-bio {
-      }
-      .s-title {
-      
-      }
-      .s-bio {
-        padding-right: 3em; 
+        padding-right: 1.9em; 
         @include droid;
         font-style: italic;
         color: #73624b;
         font-size: .96em;
+        line-height: 16px;
       }
     }
   }
@@ -165,7 +165,7 @@ p {
     td {
       border-left: 1px solid #F8C23C;
       border-top: 1px solid #F8C23C;
-      padding: 10px;
+      padding: 15px;
 
     }
     td.time {
@@ -190,14 +190,127 @@ p {
 #panelists {
   background-color: #4a3e21;
   color: #a87f19;
+  padding-top: 150px;
+  padding-bottom: 55px;
+  margin-top: -100px;
+  h2 {
+    @include brandon;
+    text-transform: uppercase;
+  }
+  .p-desc {
+    width: 205px;
+    margin-left: 250px;
+  }
+  .p-peeps {
+    margin-left: 96px;
+    margin-top: -107px;
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        float: left;
+        margin-right: 1.64em;
+        margin-bottom: 20px;
+        text-align: center;
+        .p-pic {
+          width: 102px;
+          height: 102px;
+        }
+        .p-org {
+          @include droid;
+          font-style: italic;
+        }
+      }
+      li.last {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 #experts {
+  padding: 2em;
+  h2 {
+    @include brandon;
+    text-transform: uppercase;
+    color: #fff;
+    float: left;
+    margin-right: 3em;
+  }
   .e-list, .e-list li {
     list-style: none;
+    margin: 0;
+  }
+  .e-list ul {
+    width: 100%;
   }
   .e-list li {
     float: left;
+    width: 160px;
+    margin: 1em 0 0 0;
+    text-align: center;
+  }
+}
+
+#craft-party {
+  background-color: #fff;
+  .span10 {
+    background: url('../images/plate.png') 600px 220px no-repeat;
+  }
+  h2 {
+    @include brandon;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f8c23c;
+    margin-top: 1.6em;
+    margin-bottom: .5em;
+  }
+  .party-pic {
+    float: left;
+  }
+  .party-desc {
+    @include droid;
+    font-style: italic; 
+    color: #a87f19;
+    margin-bottom: 3em;
+  }
+  .btn-green {
+    background-color: #71bcab;
+    color: #fff; 
+    padding: 1em 2em;
+    @include border-radius(3px);
+    text-transform: uppercase;
+  }
+}
+
+#sponsors {
+  background: #f8c23c url('../images/bg.png');
+  min-height: 200px;
+  margin-top: -53px;
+  .span6 {
+    margin-top: 2.5em; 
+  }
+  h2 {
+    @include brandon;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .sponsor-desc {
+    @include droid;
+    font-style: italic;
+    color: #4a3e21;
+  }
+  .sponsor-logos ul,
+  .sponsor-logos li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sponsor-logos li {
+    float: left;
+    width: 225px;
+    text-align: center;
+    margin-bottom: 3em;
   }
 }
 
