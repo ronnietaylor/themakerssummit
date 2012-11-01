@@ -179,9 +179,14 @@ p {
       @include droid;
       color: #fff;
       small {
+        display: block;
+        margin-bottom: 2px;
         @include brandon;
         color: #a87f19;
         font-size: 13px;
+        i {
+          @include droid;
+        }
       }
     }
   }
@@ -314,7 +319,33 @@ p {
   }
 }
 
+#location {
+  border-top: 3px solid #fff;
+  min-height: 200px;
+  padding-top: 4em;
+  margin-bottom: -2.5em;
+  .madeforyou {
+    margin-top: 3.3em;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+  .l-desc {
+    @include droid;
+    font-style: italic;
+    color: #a87f19;
+  }
+  .l-addy {
+    @include brandon;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
 #footer {
   background-color: #fff;
   height: 5em;
+  @include droid;
+  color: #a87f19;
+  padding-top: 1em;
 }
