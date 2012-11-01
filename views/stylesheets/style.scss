@@ -196,8 +196,10 @@ a {
           @include brandon;
           color: #a87f19;
           font-size: 13px;
+          text-transform: uppercase;
           i {
             @include droid;
+            text-transform: none;
           }
         }
       }
@@ -392,7 +394,7 @@ a {
     }
   }
   #panelists {
-    margin-top: -100px;
+    margin-top: -84px;
   }
   #sponsers {
     .sponsor-logos li {
