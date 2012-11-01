@@ -25,6 +25,8 @@ p {
 .color-bar {
   background-color: #7dccb9;
   height: 9px;
+  position: relative;
+  z-index: 5;
 }
 
 #inner-wrapper {
@@ -34,7 +36,6 @@ p {
 #header {
   position: relative;
   padding-bottom: 5em;
-  z-index: -1;
   .container {
     .span10 {
       /*background-color: #F8C23C;*/
@@ -46,17 +47,19 @@ p {
   #logo {
   }
   .deets {
-    width: 56.6%;
-    /*width: 53.75%;*/
+    width: 54.2%;
     background-color: #F8C23C;
     position: absolute;
     top: -50px;
     padding: 8em 0 7.25em 6.2em;
-    margin-left: 21.4em;
+    
+    margin-left: 18.5em;
+    z-index: 3;
     h1 {
       text-transform: uppercase;
       color: #4a3e21;
       margin-bottom: .3em;
+      font-size: 27px;
     }
     h3 {
       margin-bottom: 1em;
@@ -64,7 +67,7 @@ p {
     .desc {
       @include droid;
       color: #a87f19;
-      font-size: 1.4em;
+      font-size: 1.1em;
       margin-bottom: 1.3em;
       line-height: 1.3em;
     }
@@ -92,112 +95,118 @@ p {
 }
 
 #speakers-schedule {
-  margin-top: -4.8em;
-}
-
-#speakers {
-  padding: 2em 2em 0 2.6em;
-  background-color: #fff;
-  margin-top: -34px;
-  width: 375px;
-  h2 {
-    font-weight: 700;
-    text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+  margin-top: -7.8em;
+  .span5 {
+    width: 325px;
   }
-  h3 {
-    @include droid;
-    font-weight: 400;
-  }
-  h4 {
-    color: #7dccba;
-    text-transform: uppercase;
-    font-size: .9em;
-    line-height: 14px;
-    margin-bottom: 10px;
-  }
-  .s-desc {
-    @include droid;
-    font-style: italic;
-    color: #a87f19;
-  }
-  .speaker-list {
-    list-style: none;
-    margin: 0 -2em 0 -2.6em;
-    li {
-      padding: 1.2em 0;
-      min-height: 168px;
-      .s-pic {
-        width: 163px;
-        height: 163px;
-        float: left;
-        margin: .5em 1.5em 2em 2.9em;
-        overflow: visible;
-      }
-      .s-bio {
-        padding-right: 1.9em; 
-        @include droid;
-        font-style: italic;
-        color: #73624b;
-        font-size: .96em;
-        line-height: 16px;
-      }
-    }
-  }
-  .s-stripe {
-    background-color: #ecf7f5;
-  }
-}
-
-#schedule {
-  margin-left: 0;
-  h2 {
-    padding-left: 3em;
-    padding-top: .1em;
-    padding-bottom: .1em;
-    text-transform: uppercase;
-  }
-  .table-bordered {
-    font-size: 17px;
-    border-top: 1px solid #F8C23C;
-    border-right: none;
-    border-bottom: none;
-    border-left: none;
-    td {
-      border-left: 1px solid #F8C23C;
-      border-top: 1px solid #F8C23C;
-      padding: 15px;
-
-    }
-    td.time {
-      border-left: none;
-      text-align: right;
-      padding-left: 9px;
-      color: #a87f19;
+  #speakers {
+    padding: 2em 2em 0 2.6em;
+    background-color: #fff;
+    margin-top: -24px;
+    width: 375px;
+    h2 {
       font-weight: 700;
+      text-transform: uppercase;
     }
-    td.event {
+    h3 {
       @include droid;
-      color: #fff;
-      small {
-        display: block;
-        margin-bottom: 2px;
-        @include brandon;
-        color: #a87f19;
-        font-size: 13px;
-        i {
+      font-weight: 400;
+    }
+    h4 {
+      color: #7dccba;
+      text-transform: uppercase;
+      font-size: .9em;
+      line-height: 14px;
+      margin-bottom: 10px;
+    }
+    .s-desc {
+      @include droid;
+      font-style: italic;
+      color: #a87f19;
+    }
+    .speaker-list {
+      list-style: none;
+      margin: 0 -2em 0 -2.6em;
+      li {
+        padding: 1.2em 0;
+        min-height: 168px;
+        .s-pic {
+          width: 163px;
+          height: 163px;
+          float: left;
+          margin: .5em 1.5em 2em 2.9em;
+          overflow: visible;
+        }
+        .s-bio {
+          padding-right: 1.9em; 
           @include droid;
+          font-style: italic;
+          color: #73624b;
+          font-size: .96em;
+          line-height: 16px;
+        }
+      }
+    }
+    .s-stripe {
+      background-color: #ecf7f5;
+    }
+  }
+  #schedule {
+    margin-left: 0;
+
+    h2 {
+      padding-left: 3em;
+      padding-top: .1em;
+      padding-bottom: .1em;
+      text-transform: uppercase;
+    }
+    .table-bordered {
+      font-size: 17px;
+      border-top: 1px solid #F8C23C;
+      border-right: none;
+      border-bottom: none;
+      border-left: none;
+      td {
+        border-left: 1px solid #F8C23C;
+        border-top: 1px solid #F8C23C;
+        padding: 15px;
+
+      }
+      td.time {
+        border-left: none;
+        text-align: right;
+        padding-left: 9px;
+        color: #a87f19;
+        font-weight: 700;
+      }
+      td.event {
+        @include droid;
+        color: #fff;
+        small {
+          display: block;
+          margin-bottom: 2px;
+          margin-top: .3em;
+          @include brandon;
+          color: #a87f19;
+          font-size: 13px;
+          i {
+            @include droid;
+          }
         }
       }
     }
   }
 }
 
+
 #panelists {
   background-color: #4a3e21;
   color: #a87f19;
   padding-top: 150px;
   padding-bottom: 55px;
-  margin-top: -100px;
+  margin-top: -58px;
   h2 {
     @include brandon;
     text-transform: uppercase;
@@ -254,6 +263,9 @@ p {
     width: 160px;
     margin: 1em 0 0 0;
     text-align: center;
+    .e-name {
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -313,9 +325,9 @@ p {
   }
   .sponsor-logos li {
     float: left;
-    width: 225px;
     text-align: center;
     margin-bottom: 3em;
+    margin-right: 6em;
   }
 }
 
@@ -348,4 +360,35 @@ p {
   @include droid;
   color: #a87f19;
   padding-top: 1em;
+}
+
+/* Big screen media queries */
+@media (min-width: 1200px) {
+  #header {
+    h1 {
+      font-size: 30px;
+    }
+    .deets {
+      width: 56.6%;
+      margin-left: 21.4em;
+      .desc {
+        font-size: 1.4em;
+      }
+    }
+  }
+  
+  #speakers-schedule {
+    margin-top: -4.8em;
+    .span5 {
+      width: 413px;
+    }
+  }
+  #panelists {
+    margin-top: -100px;
+  }
+  #sponsers {
+    .sponsor-logos li {
+      margin-right: 6em;
+    }
+  }
 }
