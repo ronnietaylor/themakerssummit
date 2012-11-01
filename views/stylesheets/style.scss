@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: #f8c23c url('../images/bg.png') ;
+  background: #f8c23c url('../images/bg2.png') ;
   @include brandon;
 }
 
@@ -182,7 +182,6 @@ a {
       td.time {
         border-left: none;
         text-align: right;
-        padding-left: 9px;
         color: #a87f19;
         font-weight: 700;
       }
@@ -311,6 +310,9 @@ a {
   background: #f8c23c url('../images/bg.png');
   min-height: 200px;
   margin-top: -53px;
+  a {
+    color: #fff;
+  }
   .span6 {
     margin-top: 2.5em; 
   }
@@ -342,12 +344,19 @@ a {
   border-top: 3px solid #fff;
   min-height: 200px;
   padding-top: 4em;
-  margin-bottom: -2.5em;
-  .madeforyou {
-    margin-top: 3.3em;
-  }
+  margin-bottom: -0.8em;
   h3 {
     text-transform: uppercase;
+  }
+  .madeforyou {
+    h3.l-email {
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 12px;
+      a {
+        color: #fff;
+      }
+    }
   }
   .l-desc {
     @include droid;
@@ -361,6 +370,12 @@ a {
     a {
       color: #fff;
     }
+  }
+  .zen {
+    img {
+      position: relative;
+      top: 21px;
+    } 
   }
 }
 
@@ -394,7 +409,10 @@ a {
     }
   }
   #panelists {
-    margin-top: -84px;
+    margin-top: -57px;
+    .p-peeps {
+      margin-left: 84px;
+    }
   }
   #sponsers {
     .sponsor-logos li {
