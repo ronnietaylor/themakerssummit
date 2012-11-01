@@ -22,6 +22,11 @@ p {
   font-size: 12px;
 }
 
+a {
+  outline: none;
+  border: none;
+}
+
 .color-bar {
   background-color: #7dccb9;
   height: 9px;
@@ -351,6 +356,9 @@ p {
     @include brandon;
     text-transform: uppercase;
     color: #fff;
+    a {
+      color: #fff;
+    }
   }
 }
 
