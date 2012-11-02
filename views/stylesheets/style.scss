@@ -607,6 +607,11 @@ a {
       h1 {
         font-size: 18px;
       }
+      span.date {
+        font-size: 1em;
+        top: -.3em;;
+        font-weight: 700;
+      }
     }
   }
   #speakers-schedule {
@@ -644,9 +649,41 @@ a {
     }
   }
   #craft-party {
+    padding: 0 30px 20px 30px;
+    h2 {
+      clear: both;
+      font-size: 20px;
+    }
     .party-pic {
-      float: right;
-      margin-right: -23px;
+      img {
+        display: none;
+      }
+      background: url("../images/party.jpg") no-repeat top left;
+      width: 317px;
+      height: 371px;
+      margin: 0 auto;
+    }
+  }
+  #sponsors {
+    margin-top: 0;
+    padding: 0 20px;
+    .sponsor-logos {
+      li {
+        float: none;
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  #location {
+    padding-top: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5;
+    .zen img {
+      top: 0;
+    }
+    .madeforyou {
+      margin-bottom: 1em;
     }
   }
 }
