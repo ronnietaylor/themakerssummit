@@ -351,14 +351,6 @@ a {
       text-transform: uppercase;
     }
   }
-  background: -moz-linear-gradient(left, rgba(234,178,40,1) 0%, rgba(202,145,23,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(234,178,40,1)), color-stop(100%,rgba(202,145,23,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(234,178,40,1) 0%,rgba(202,145,23,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, rgba(234,178,40,1) 0%,rgba(202,145,23,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, rgba(234,178,40,1) 0%,rgba(202,145,23,1) 100%); /* IE10+ */
-	background: linear-gradient(to right, rgba(234,178,40,1) 0%,rgba(202,145,23,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eab228', endColorstr='#00ca9117',GradientType=1 ); /* IE6-9 */
-	
 	a.sprite {
 		display: block;
     width: 103px;
@@ -398,6 +390,16 @@ a {
 	a.sprite-Justin:hover {
 		background-position: 0 -749px;
 	}
+  .sprite-TMS_Sm_AmyF{ background-position: 0 0; } 
+  .sprite-TMS_Sm_AmyF1{ background-position: 0 -116px; } 
+  .sprite-TMS_Sm_Justin{ background-position: 0 -232px; } 
+  .sprite-TMS_Sm_Justin1{ background-position: 0 -348px; } 
+  .sprite-TMS_Sm_Kimm{ background-position: 0 -464px; } 
+  .sprite-TMS_Sm_Kimm1{ background-position: 0 -580px; } 
+  .sprite-TMS_Sm_Paul{ background-position: 0 -696px; } 
+  .sprite-TMS_Sm_Paul1{ background-position: 0 -812px; } 
+  .sprite-TMS_Sm_TMS{ background-position: 0 -928px; } 
+  .sprite-TMS_Sm_TMS1{ background-position: 0 -1044px; } 
 }
 
 #craft-party {
@@ -431,7 +433,7 @@ a {
 }
 
 #sponsors {
-  background: #f8c23c url('../images/bg.png');
+  background: #f8c23c url('../images/bg2.png');
   min-height: 200px;
   margin-top: -53px;
   a {
