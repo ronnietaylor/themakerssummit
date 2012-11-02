@@ -620,9 +620,11 @@ a {
       width: 91.6%;
       padding: 1.25em;
       .speaker-list {
+        margin: 0;
         li {
           .s-pic {
-            margin: .5em 1.5em 10em 2.9em;
+            margin: 0 auto 15px auto;
+            float: none;
           }
           .s-bio {
           }
@@ -644,7 +646,7 @@ a {
 
     }
     .p-peeps {
-      width: 103px;
+      width: 252px;
       margin-top: 0;
       margin-left: auto;
       margin-right: auto;
@@ -655,7 +657,7 @@ a {
       margin-right: 0;
     }
     .e-list li {
-      width: 81px;
+      width: 80px;
     }
   }
   #craft-party {
@@ -669,7 +671,7 @@ a {
         display: none;
       }
       background: url("../images/party.jpg") no-repeat top left;
-      width: 317px;
+      width: 280px;
       height: 371px;
       margin: 0 auto;
     }
