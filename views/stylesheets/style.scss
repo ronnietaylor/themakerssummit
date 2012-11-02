@@ -360,6 +360,11 @@ a {
     width: 103px;
     height: 102px;
     background: url('../images/experts-sprites.png') no-repeat top left;
+    margin: 0 auto;
+    
+    img {
+    	display: none;
+    }
 	}
 	
 	a.sprite-Paul {
@@ -380,7 +385,7 @@ a {
 		background-position: 0 -428px;
 	}
 	a.sprite-Kimm:hover {
-		background-position: 0 -530px;
+		background-position: -2px -535px;
 	}
 	
 	a.sprite-Justin {
