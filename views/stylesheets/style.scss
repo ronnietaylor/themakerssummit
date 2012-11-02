@@ -116,8 +116,9 @@ a {
       text-transform: uppercase;
     }
     h3 {
-      @include droid;
-      font-weight: 400;
+      @include brandon;
+      text-transform: uppercase;
+      line-height: 18px;
     }
     h4 {
       color: #7dccba;
