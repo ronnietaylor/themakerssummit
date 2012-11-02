@@ -153,16 +153,16 @@ a {
             background-position: -12px -209px; width: 163px; height: 163px; 
           } 
           a.sprite-TMS_Lg_Kimm{ 
-            background-position: -12px -406px; width: 187px; height: 187px; 
+            background-position: -12px -406px; width: 163px; height: 163px; 
           } 
           a.sprite-TMS_Lg_Kimm:hover{ 
-            background-position: -12px -603px; width: 187px; height: 187px; 
+            background-position: -12px -603px; width: 163px; height: 163px; 
           } 
           a.sprite-TMS_Lg_Stephen{ 
-            background-position: -12px -800px; width: 187px; height: 187px; 
+            background-position: -12px -800px; width: 163px; height: 163px; 
           } 
           a.sprite-TMS_Lg_Stephen:hover{ 
-            background-position: -12px -997px; width: 187px; height: 187px; 
+            background-position: -12px -997px; width: 163px; height: 163px; 
           } 
           a {
             display: block;
@@ -622,7 +622,9 @@ a {
       .speaker-list {
         li {
           .s-pic {
-            margin: .5em 1.5em 3em 2.9em;
+            margin: .5em 1.5em 10em 2.9em;
+          }
+          .s-bio {
           }
         }
       }
@@ -642,14 +644,22 @@ a {
 
     }
     .p-peeps {
-      width: 250px;
+      width: 103px;
       margin-top: 0;
       margin-left: auto;
       margin-right: auto;
     }
   }
+  #experts {
+    h2 {
+      margin-right: 0;
+    }
+    .e-list li {
+      width: 81px;
+    }
+  }
   #craft-party {
-    padding: 0 30px 20px 30px;
+    padding: 0 20px 20px 20px;
     h2 {
       clear: both;
       font-size: 20px;
