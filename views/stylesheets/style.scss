@@ -250,6 +250,7 @@ a {
     margin-left: 250px;
   }
   .p-peeps {
+    width: 440px;
     margin-top: -107px;
     ul {
       list-style: none;
@@ -260,6 +261,7 @@ a {
         margin-bottom: 20px;
         text-align: center;
         a {
+          margin: 0 auto;
           img {
             display: none;
           }
@@ -269,7 +271,7 @@ a {
           background: url('../images/TMS_Md_sprite.png') no-repeat top left;
         }
         .p-pic {
-          width: 102px;
+          width: 119px;
           height: 102px;
         }
         .sprite-TMS_Md_AmyE{ 
@@ -283,6 +285,12 @@ a {
         } 
         .sprite-TMS_Md_AmyF:hover{ 
           background-position: -4px -364px; width: 102px; height: 102px; 
+        } 
+        .sprite-TMS_Md_Bonnie{ 
+          background-position: -4px -1443px; width: 102px; height: 102px; 
+        } 
+        .sprite-TMS_Md_Bonnie:hover{ 
+          background-position: -4px -1561px; width: 102px; height: 102px; 
         } 
         .sprite-TMS_Md_Grace{ 
           background-position: -4px -484px; width: 102px; height: 102px; 
@@ -538,7 +546,7 @@ a {
   #panelists {
     margin-top: -32px;
     .p-peeps {
-      margin-left: 84px;
+      margin-left: 75px;
     }
   }
   #experts {
