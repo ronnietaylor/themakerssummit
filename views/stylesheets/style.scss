@@ -250,7 +250,7 @@ a {
     margin-left: 250px;
   }
   .p-peeps {
-    width: 440px;
+    width: 300px;
     margin-top: -107px;
     ul {
       list-style: none;
@@ -547,6 +547,7 @@ a {
     margin-top: -32px;
     .p-peeps {
       margin-left: 75px;
+      width: 440px;
     }
   }
   #experts {
@@ -704,6 +705,26 @@ a {
     }
     .madeforyou {
       margin-bottom: 1em;
+    }
+  }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+  #panelists {
+    .p-desc {
+      margin-left: 12px;
+      margin-right: 46px;
+    }
+  }
+  #craft-party {
+    .span3 {
+      width: 220px;
+    }
+    .span6 {
+      width: 335px;
+    }
+    .btn-green {
+      padding: .6em 1em;
     }
   }
 }
