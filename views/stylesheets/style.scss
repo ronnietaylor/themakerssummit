@@ -37,7 +37,20 @@ a {
 #inner-wrapper {
   width: 100%;
 }
+.top {
+  background-color: #7dccba;
+  padding: 71px 0 74px;
 
+  p {
+    font-family: Georgia, serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3em;
+    a{ 
+      color: #221d13;
+    }
+  }
+}
 #header {
   position: relative;
   padding-bottom: 5em;
@@ -55,8 +68,8 @@ a {
     width: 54.2%;
     background-color: #F8C23C;
     position: absolute;
-    top: -50px;
-    padding: 8em 0 7.25em 6.2em;
+    // top: -50px;
+    padding: 8em 0 /*7.25em*/ 6.75em 6.2em;
     margin-left: 18.45em;
     z-index: 3;
     h1 {
@@ -100,6 +113,16 @@ a {
       position: relative;
       top: .8em;
     }
+  }
+  .vid-con {
+    position: absolute;
+    top: -25px;
+    z-index: 5;
+  }
+  .row2 {
+    position: relative;
+    top: -55px;
+    padding-top: 468px;
   }
 }
 
