@@ -1,5 +1,3 @@
-puts $LOAD_PATH
-
 # Get ready to kick ass.
 require 'sinatra'
 require 'haml'
