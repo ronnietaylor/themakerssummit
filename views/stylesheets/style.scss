@@ -78,7 +78,7 @@ a {
     width: 54.2%;
     background-color: #F8C23C;
     position: absolute;
-    padding: 7em 0 6.75em 6.2em;
+    padding: 7em 0 5.9em 6.2em;
     margin-left: 18.45em;
     z-index: 3;
     h1 {
@@ -129,10 +129,19 @@ a {
     left: -62px;
     top: -63px;
     z-index: 5;
+    .vid {
+      width: 868px;
+      height: 498px;
+    }
   }
   .row2 {
     position: relative;
-    top: -5em;
+    top: -2em;
+    #logo-mgm {
+      .logo {
+        margin-top: 51px;
+      }
+    }
   }
 }
 
@@ -641,6 +650,17 @@ a {
     padding-left: 0;
     padding-right: 0;
   }
+  .top {
+    padding: 1em 0 9em;
+    .logo {
+      text-align: center;
+    }
+    h1 {
+    }
+    .deets {
+      padding-left: 2em;
+    }
+  }
   #header {
     padding-bottom: 1.9em;
     .span10 {
@@ -660,12 +680,17 @@ a {
       }
     }
     .deets {
-      width: 89.5%;
+      width: 100%;
       position: inherit;
       padding: 20px;
       margin-left: 0;
       h1 {
         font-size: 18px;
+      }
+      .btn-brown {
+        float: none;
+        text-align: center;
+        margin-right: 0;
       }
       span.date {
         font-size: 1em;
@@ -673,11 +698,22 @@ a {
         font-weight: 700;
       }
     }
+    .vid-con .vid {
+      width: 100%;
+      height: 235px;
+    }
+    .row2 {
+      #logo-mgm {
+        .logo {
+          text-align: center;
+        }
+      }
+    }
   }
   #speakers-schedule {
     margin-top: 0;
     #speakers {
-      width: 91.6%;
+      width: 100%;
       padding: 1.25em;
       .speaker-list {
         margin: 0;
@@ -693,6 +729,14 @@ a {
     }
     .span5 {
       width: 100%;
+    }
+    #schedule {
+      h2 {
+        padding-left: 2em;
+      }
+      table {
+        width: 100%;
+      }
     }
   }
   #panelists {
@@ -738,7 +782,7 @@ a {
   }
   #sponsors {
     margin-top: 0;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     .sponsor-logos {
       li {
         float: none;
@@ -776,6 +820,58 @@ a {
     }
     .btn-green {
       padding: .6em 1em;
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .top {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  #header {
+    .vid-con {
+      .vid {
+        width: 588px;
+        height: 326px;
+      }
+    }
+    .deets {
+      padding: 73px 0 0 0;
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+  .row2 {
+    .deets {
+      .span5 {
+        width: 396px;
+      }
+    }
+  }
+  #speakers-schedule {
+    margin-top: -2em;
+    #speakers {
+      margin-top: 0;
+    }
+    #schedule {
+      margin-top: 20px;
+      h2 {
+        padding-left: 2em;
+      }
+    }
+  }
+  #craft-party {
+    .span10 {
+      background: none;
+      h2 {
+        font-size: 1.7em;
+      }
+      .btn-green {
+        display: none;
+      }
     }
   }
 }
