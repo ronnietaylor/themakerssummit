@@ -56,7 +56,7 @@ a {
     }
   }
   .deets {
-    padding-left: 2.3em;
+    padding-left: 2em;
     margin-top: 2em;
   }
 }
@@ -78,14 +78,14 @@ a {
     width: 54.2%;
     background-color: #F8C23C;
     position: absolute;
-    padding: 3em 0 5.9em 6.2em;
+    padding: 5em 0 5.9em 6.2em;
     margin-left: 18.45em;
     z-index: 3;
     h1 {
       text-transform: uppercase;
       color: #4a3e21;
       margin-bottom: .3em;
-      font-size: 27px;
+      font-size: 32px;
       line-height: 36px;
     }
     h3 {
@@ -101,13 +101,11 @@ a {
     .reg {
     }
     .btn-brown {
-      /* background-color: #221d13; */
+      background-color: #221d13;
       @include brandon;
-      background-color: #a97f19;
       color: #f8c23c;
-      padding: .5em;
-      font-size: 2em;
-      font-size: 2.8em;
+      padding: 1em 1.3em;
+      font-size: 21px;
       @include border-radius(3px);
       text-transform: uppercase;
       display: block;
@@ -118,10 +116,10 @@ a {
     span.date {
       color: #fff;
       font-weight: 500;
-      font-size: 1.1em;
+      font-size: 22px;
       text-transform: uppercase;
       position: relative;
-      top: .8em;
+      top: 10px;
     }
   }
   .vid-con {
@@ -611,7 +609,7 @@ a {
         height: 41em;
         #logo-mgm {
           .logo {
-            margin-top: 51px;
+            margin-top: 24px;
           }
         }
       }
