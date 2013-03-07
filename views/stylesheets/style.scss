@@ -70,7 +70,7 @@ a {
     }
   }
   .span10 {
-    height: 41em;
+    height: 34em;
   }
   #logo {
   }
@@ -78,7 +78,7 @@ a {
     width: 54.2%;
     background-color: #F8C23C;
     position: absolute;
-    padding: 7em 0 5.9em 6.2em;
+    padding: 3em 0 5.9em 6.2em;
     margin-left: 18.45em;
     z-index: 3;
     h1 {
@@ -130,8 +130,8 @@ a {
     top: -63px;
     z-index: 5;
     .vid {
-      width: 868px;
-      height: 498px;
+      width: 733px;
+      height: 422px;
     }
   }
   .row2 {
@@ -139,7 +139,7 @@ a {
     top: -2em;
     #logo-mgm {
       .logo {
-        margin-top: 51px;
+        margin-top: 19px;
       }
     }
   }
@@ -148,7 +148,6 @@ a {
 #speakers-schedule {
   position: relative;
   z-index: 3;
-  margin-top: -7.8em;
   .span5 {
     width: 325px;
   }
@@ -156,7 +155,7 @@ a {
     padding: 2em 2em 0 2.6em;
     background-color: #fff;
     margin-top: -24px;
-    width: 375px;
+    width: 370px;
     h2 {
       font-weight: 700;
       text-transform: uppercase;
@@ -239,7 +238,7 @@ a {
     margin-left: 0;
 
     h2 {
-      padding-left: 3em;
+      padding-left: 2.1em;
       padding-top: .1em;
       padding-bottom: .1em;
       text-transform: uppercase;
@@ -592,14 +591,33 @@ a {
     .deets {
       width: 57.4%;
       margin-left: 19.8em;
+      padding: 7em 0 5.9em 6.2em;
       .desc {
         font-size: 1.4em;
       }
     }
+    .vid-con {
+      position: relative;
+      left: -62px;
+      top: -63px;
+      z-index: 5;
+      .vid {
+        width: 868px;
+        height: 498px;
+      }
+    }
+    .row2 {
+      .span10 {
+        height: 41em;
+        #logo-mgm {
+          .logo {
+            margin-top: 51px;
+          }
+        }
+      }
+    }
   }
-  
   #speakers-schedule {
-    margin-top: 0;
     .span5 {
       width: 413px;
     }
