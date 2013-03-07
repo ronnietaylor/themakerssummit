@@ -644,166 +644,6 @@ a {
 // Responsive: Landscape phone to desktop/tablet
 // --------------------------------------------------
 
-
-@media (max-width: 767px) { 
-  body {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .top {
-    padding: 1em 0 9em;
-    .logo {
-      text-align: center;
-    }
-    h1 {
-    }
-    .deets {
-      padding-left: 2em;
-    }
-  }
-  #header {
-    padding-bottom: 1.9em;
-    .span10 {
-      height: inherit;
-    }
-    #logo {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      .logo img {
-        display: none;
-      }
-      .logo {
-        width: 249px;
-        height: 249px;
-        margin: 0 auto;
-        background: url('../images/tms-logo.png');
-      }
-    }
-    .deets {
-      width: 100%;
-      position: inherit;
-      padding: 20px;
-      margin-left: 0;
-      h1 {
-        font-size: 18px;
-      }
-      .btn-brown {
-        float: none;
-        text-align: center;
-        margin-right: 0;
-      }
-      span.date {
-        font-size: 1em;
-        top: -.3em;;
-        font-weight: 700;
-      }
-    }
-    .vid-con .vid {
-      width: 100%;
-      height: 235px;
-    }
-    .row2 {
-      #logo-mgm {
-        .logo {
-          text-align: center;
-        }
-      }
-    }
-  }
-  #speakers-schedule {
-    margin-top: 0;
-    #speakers {
-      width: 100%;
-      padding: 1.25em;
-      .speaker-list {
-        margin: 0;
-        li {
-          .s-pic {
-            margin: 0 auto 15px auto;
-            float: none;
-          }
-          .s-bio {
-          }
-        }
-      }
-    }
-    .span5 {
-      width: 100%;
-    }
-    #schedule {
-      h2 {
-        padding-left: 2em;
-      }
-      table {
-        width: 100%;
-      }
-    }
-  }
-  #panelists {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    .p-desc {
-      width: 100%;
-      margin-left: 0;
-
-    }
-    .p-peeps {
-      width: 252px;
-      margin-top: 0;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  #experts {
-    h2 {
-      margin-right: 0;
-    }
-    .e-list li {
-      width: 80px;
-    }
-  }
-  #craft-party {
-    padding: 0 20px 20px 20px;
-    h2 {
-      clear: both;
-      font-size: 20px;
-    }
-    .party-pic {
-      img {
-        display: none;
-      }
-      background: url("../images/party.jpg") no-repeat top left;
-      width: 280px;
-      height: 371px;
-      margin: 0 auto;
-    }
-  }
-  #sponsors {
-    margin-top: 0;
-    padding: 0 20px 20px 20px;
-    .sponsor-logos {
-      li {
-        float: none;
-        margin-bottom: 0;
-        margin-right: 0;
-      }
-    }
-  }
-  #location {
-    padding-top: 2em;
-    padding-left: 1.5em;
-    padding-right: 1.5;
-    .zen img {
-      top: 0;
-    }
-    .madeforyou {
-      margin-bottom: 1em;
-    }
-  }
-}
-
 @media (max-width: 979px) and (min-width: 768px) {
   #panelists {
     .p-desc {
@@ -873,5 +713,177 @@ a {
         display: none;
       }
     }
+  }
+}
+
+@media (max-width: 767px) { 
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .top {
+    padding: 1em 0 9em;
+    .logo {
+      text-align: center;
+    }
+    h1 {
+    }
+    .deets {
+      padding: 0 1em;
+    }
+  }
+  #header {
+    padding-bottom: 1.9em;
+    .span10 {
+      height: inherit;
+    }
+    #logo {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .logo img {
+        display: none;
+      }
+      .logo {
+        width: 249px;
+        height: 249px;
+        margin: 0 auto;
+        background: url('../images/tms-logo.png');
+      }
+    }
+    .deets {
+      width: 100%;
+      position: inherit;
+      padding: 1em;
+      margin-left: 0;
+      h1 {
+        font-size: 18px;
+      }
+      h3 {
+        max-width: 90%;
+      }
+      .btn-brown {
+        text-align: center;
+        margin-right: 20px;
+        font-size: 2em;
+      }
+      span.date {
+        font-size: 1em;
+        top: -.3em;;
+        font-weight: 700;
+      }
+    }
+    .vid-con { 
+      left: 0;
+      .vid {
+        width: 100%;
+        height: 235px;
+      }
+    }
+    .row2 {
+      #logo-mgm {
+        .logo {
+          text-align: center;
+        }
+      }
+      .deets {
+        .span5 {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #speakers-schedule {
+    margin-top: 0;
+    #speakers {
+      width: 100%;
+      padding: 1.25em;
+      .speaker-list {
+        margin: 0;
+        li {
+          .s-pic {
+            margin: 0 auto 15px auto;
+            float: none;
+          }
+          .s-bio {
+          }
+        }
+      }
+    }
+    .span5 {
+      width: 100%;
+    }
+    #schedule {
+      h2 {
+        padding-left: 2em;
+      }
+      table {
+        width: 100%;
+      }
+    }
+  }
+  #panelists {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .p-desc {
+      width: 100%;
+      margin-left: 0;
+
+    }
+    .p-peeps {
+      width: 252px;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  #experts {
+    margin: 1em;
+    h2 {
+      margin-right: 0;
+    }
+    .e-list li {
+      width: 106px;
+    }
+  }
+  #craft-party {
+    padding: 0 20px 20px 20px;
+    h2 {
+      clear: both;
+      font-size: 20px;
+    }
+    .party-pic {
+      img {
+        display: none;
+      }
+      background: url("../images/party.jpg") no-repeat top left;
+      width: 280px;
+      height: 371px;
+      margin: 0 auto;
+    }
+  }
+  #sponsors {
+    margin-top: 0;
+    padding: 0 20px 20px 20px;
+    .sponsor-logos {
+      li {
+        float: none;
+        margin-bottom: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  #location {
+    text-align: center;
+    .zen img {
+      top: 0;
+    }
+    .madeforyou {
+      margin-bottom: 1em;
+    }
+  }
+  #footer {
+    text-align: center;
   }
 }
