@@ -721,19 +721,25 @@ a {
     padding-left: 0;
     padding-right: 0;
   }
+  h2 {
+    font-size: 28px;
+  }
   .top {
     padding: 1em 0 9em;
     .logo {
       text-align: center;
     }
     h1 {
+      text-align: center;
+      font-size: 18px;
     }
     .deets {
       padding: 0 1em;
+      margin-top: 0;
     }
   }
   #header {
-    padding-bottom: 1.9em;
+    padding-bottom: 0;
     .span10 {
       height: inherit;
     }
@@ -768,7 +774,7 @@ a {
       }
       span.date {
         font-size: 1em;
-        top: -.3em;;
+        top: 3px;
         font-weight: 700;
       }
     }
@@ -776,13 +782,14 @@ a {
       left: 0;
       .vid {
         width: 100%;
-        height: 235px;
+        height: 226px;
       }
     }
     .row2 {
       #logo-mgm {
         .logo {
           text-align: center;
+          margin-top: 0;
         }
       }
       .deets {
@@ -797,14 +804,18 @@ a {
     #speakers {
       width: 100%;
       padding: 1.25em;
+      h2 {
+        font-size: 28px;
+      }
       .speaker-list {
         margin: 0;
         li {
           .s-pic {
-            margin: 0 auto 15px auto;
+            margin: 0;
             float: none;
           }
           .s-bio {
+            padding-right: 0;
           }
         }
       }
@@ -814,7 +825,7 @@ a {
     }
     #schedule {
       h2 {
-        padding-left: 2em;
+        padding-left: 19px;
       }
       table {
         width: 100%;
@@ -822,45 +833,57 @@ a {
     }
   }
   #panelists {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 1em;
     .p-desc {
       width: 100%;
       margin-left: 0;
-
+      margin-bottom: 25px;
+      p {
+        font-size: 15px;
+      }
     }
     .p-peeps {
-      width: 252px;
+      width: inherit;
       margin-top: 0;
       margin-left: auto;
       margin-right: auto;
+      ul {
+        li {
+          width: 110px;
+          margin-right: 35px;
+        }
+      }
     }
   }
   #experts {
-    margin: 1em;
+    margin: 0;
+    padding: 0 1em 1em 1em;
     h2 {
       margin-right: 0;
     }
     .e-list li {
-      width: 106px;
+      width: 130px;
     }
   }
   #craft-party {
-    padding: 0 20px 20px 20px;
-    h2 {
-      clear: both;
-      font-size: 20px;
+    padding: 0;
+    .span10 {
+      h2 {
+        clear: both;
+        font-size: 18px;
+      }
     }
     .party-pic {
       img {
         display: none;
       }
       background: url("../images/party.jpg") no-repeat top left;
-      width: 280px;
+      width: 300px;
       height: 371px;
-      margin: 0 auto;
+      margin: 0;
+    }
+    .span6 {
+      padding: 0 20px 20px 20px;
     }
   }
   #sponsors {
@@ -875,6 +898,8 @@ a {
     }
   }
   #location {
+    margin: 0;
+    padding: 0 1em;
     text-align: center;
     .zen img {
       top: 0;
