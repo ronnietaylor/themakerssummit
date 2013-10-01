@@ -63,7 +63,7 @@ a {
 #header {
   position: relative;
   padding-bottom: 0;
-  background-color: #F8C23C;
+  background-color: #71c2af;
   .container {
     .span10 {
       /*background-color: #F8C23C;*/
@@ -76,7 +76,7 @@ a {
   }
   .deets {
     width: 54.2%;
-    background-color: #F8C23C;
+    background-color: #71c2af;
     position: absolute;
     padding: 5em 0 5.9em 6.2em;
     margin-left: 18.45em;
@@ -93,7 +93,7 @@ a {
     }
     .desc {
       @include droid;
-      color: #a87f19;
+      color: #4a3e21;
       font-size: 1.1em;
       margin-bottom: 1.3em;
       line-height: 1.3em;
@@ -105,7 +105,7 @@ a {
       @include brandon;
       color: #f8c23c;
       padding: 1em 1.3em;
-      font-size: 21px;
+      font-size: 20px;
       @include border-radius(3px);
       text-transform: uppercase;
       display: block;
