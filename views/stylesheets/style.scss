@@ -78,14 +78,14 @@ a {
     width: 54.2%;
     background-color: #71c2af;
     position: absolute;
-    padding: 5em 0 5.9em 6.2em;
+    padding: 0 0 0 6.2em;
     margin-left: 18.45em;
     z-index: 3;
     h1 {
       text-transform: uppercase;
       color: #4a3e21;
       margin-bottom: .3em;
-      font-size: 32px;
+      font-size: 27px;
       line-height: 36px;
     }
     h3 {
@@ -105,7 +105,7 @@ a {
       @include brandon;
       color: #f8c23c;
       padding: 1em 1.3em;
-      font-size: 20px;
+      font-size: 16px;
       @include border-radius(3px);
       text-transform: uppercase;
       display: block;
@@ -116,10 +116,10 @@ a {
     span.date {
       color: #fff;
       font-weight: 500;
-      font-size: 22px;
+      font-size: 18px;
       text-transform: uppercase;
       position: relative;
-      top: 10px;
+      top: 4px;
     }
   }
   .vid-con {
@@ -129,7 +129,7 @@ a {
     z-index: 5;
     .vid {
       width: 733px;
-      height: 422px;
+      height: 412px;
       body, html, iframe, #player, .fallback, .player .video-wrapper {
         background-color: transparent;
       }
@@ -692,12 +692,12 @@ a {
   #header {
     .vid-con {
       .vid {
-        width: 588px;
+        width: 580px;
         height: 326px;
       }
     }
     .deets {
-      padding: 73px 0 0 0;
+      padding: 34px 0 0 0;
       h1 {
         font-size: 20px;
       }
